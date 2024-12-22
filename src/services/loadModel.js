@@ -4,6 +4,7 @@ async function loadModel() {
   try {
     // Use the model URL from environment variables if provided
     const modelUrl = process.env.MODEL_URL;
+    console.log("modelUrl", modelUrl);
 
     // Load the model
     const model = await tf.loadGraphModel(modelUrl);
